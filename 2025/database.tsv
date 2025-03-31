@@ -1966,3 +1966,27 @@ micro_bench.php	10	25	0	PHP - previous master	314219387e	https://github.com/php/
 micro_bench.php	10	25	0	PHP - master	0607c22f8e	https://github.com/php/php-src/commit/0607c22f8e	1.26266	1.28364	0.00535	1.27161	-6.02	1.27157	-5.96	0	20.60
 micro_bench.php	10	25	0	PHP - master (JIT)	0607c22f8e	https://github.com/php/php-src/commit/0607c22f8e	0.52374	0.53679	0.00316	0.53129	-60.73	0.53032	-60.78	0	21.81
 
+URI	ID	Name	Environment	Runner	Instance type	Architecture	CPU	CPU cores	RAM	Kernel	OS	GCC	Dedicated instance	Deeper C-states	Turbo boost	Hyper-threading	Time
+2025/2025_03_31_00_49_43_1_aws_x86_64_c7i_metal_24xl	aws_x86_64_c7i_metal_24xl	AWS x86_64 (c7i.24xl)	aws	host	c7i.metal-24xl	x86_64		48	188 GB	6.1.130-139.222.amzn2023.x86_64	Amazon Linux 2023.6.20250317	11.5.0	1	0	0	0	2025-03-31 00:49:43
+Test name	Test warmup	Test iterations	Test requests	PHP	PHP Commit hash	PHP Commit URL	Min	Max	Std dev	Average	Average diff %	Median	Median diff %	Instruction count	Memory usage
+Laravel 11.1.2 demo app	50	30	100	PHP - baseline@d5f6	d5f6e56610	https://github.com/php/php-src/commit/d5f6e56610	0.43704	0.45112	0.00238	0.43854	0.00	0.43809	0.00	0	41.86
+Laravel 11.1.2 demo app	50	30	100	PHP - previous master	0607c22f8e	https://github.com/php/php-src/commit/0607c22f8e	0.43386	0.44103	0.00125	0.43477	-0.86	0.43452	-0.82	0	41.92
+Laravel 11.1.2 demo app	50	30	100	PHP - master	334d9bbc09	https://github.com/php/php-src/commit/334d9bbc09	0.43424	0.43681	0.00057	0.43513	-0.78	0.43505	-0.69	0	41.93
+Laravel 11.1.2 demo app	50	30	100	PHP - master (JIT)	334d9bbc09	https://github.com/php/php-src/commit/334d9bbc09	0.42405	0.42778	0.00069	0.42497	-3.09	0.42483	-3.03	0	50.81
+Symfony 2.6.0 demo app	50	30	100	PHP - baseline@d5f6	d5f6e56610	https://github.com/php/php-src/commit/d5f6e56610	0.70644	0.71377	0.00121	0.71170	0.00	0.71174	0.00	0	37.40
+Symfony 2.6.0 demo app	50	30	100	PHP - previous master	0607c22f8e	https://github.com/php/php-src/commit/0607c22f8e	0.70415	0.70735	0.00083	0.70544	-0.88	0.70537	-0.89	0	37.62
+Symfony 2.6.0 demo app	50	30	100	PHP - master	334d9bbc09	https://github.com/php/php-src/commit/334d9bbc09	0.70327	0.70595	0.00065	0.70441	-1.02	0.70432	-1.04	0	37.62
+Symfony 2.6.0 demo app	50	30	100	PHP - master (JIT)	334d9bbc09	https://github.com/php/php-src/commit/334d9bbc09	0.67588	0.67938	0.00090	0.67740	-4.82	0.67730	-4.84	0	44.58
+Wordpress 6.2 main page	10	30	20	PHP - baseline@d5f6	d5f6e56610	https://github.com/php/php-src/commit/d5f6e56610	0.57997	0.58213	0.00058	0.58115	0.00	0.58119	0.00	0	43.01
+Wordpress 6.2 main page	10	30	20	PHP - previous master	0607c22f8e	https://github.com/php/php-src/commit/0607c22f8e	0.57602	0.57922	0.00065	0.57716	-0.69	0.57709	-0.71	0	43.01
+Wordpress 6.2 main page	10	30	20	PHP - master	334d9bbc09	https://github.com/php/php-src/commit/334d9bbc09	0.57719	0.57879	0.00037	0.57799	-0.54	0.57801	-0.55	0	43.01
+Wordpress 6.2 main page	10	30	20	PHP - master (JIT)	334d9bbc09	https://github.com/php/php-src/commit/334d9bbc09	0.51622	0.52141	0.00109	0.51983	-10.55	0.52004	-10.52	0	61.94
+bench.php	10	25	0	PHP - baseline@d5f6	d5f6e56610	https://github.com/php/php-src/commit/d5f6e56610	0.21491	0.21830	0.00072	0.21582	0.00	0.21576	0.00	0	26.18
+bench.php	10	25	0	PHP - previous master	0607c22f8e	https://github.com/php/php-src/commit/0607c22f8e	0.25486	0.27694	0.00514	0.26719	23.80	0.26745	23.96	0	26.34
+bench.php	10	25	0	PHP - master	334d9bbc09	https://github.com/php/php-src/commit/334d9bbc09	0.21567	0.21873	0.00075	0.21729	0.68	0.21733	0.73	0	26.34
+bench.php	10	25	0	PHP - master (JIT)	334d9bbc09	https://github.com/php/php-src/commit/334d9bbc09	0.07541	0.07735	0.00051	0.07621	-64.69	0.07623	-64.67	0	27.39
+micro_bench.php	10	25	0	PHP - baseline@d5f6	d5f6e56610	https://github.com/php/php-src/commit/d5f6e56610	1.33879	1.36168	0.00566	1.35090	0.00	1.35136	0.00	0	20.44
+micro_bench.php	10	25	0	PHP - previous master	0607c22f8e	https://github.com/php/php-src/commit/0607c22f8e	1.26224	1.28486	0.00482	1.26965	-6.01	1.26881	-6.11	0	20.60
+micro_bench.php	10	25	0	PHP - master	334d9bbc09	https://github.com/php/php-src/commit/334d9bbc09	1.26568	1.27915	0.00356	1.27159	-5.87	1.27085	-5.96	0	20.60
+micro_bench.php	10	25	0	PHP - master (JIT)	334d9bbc09	https://github.com/php/php-src/commit/334d9bbc09	0.53229	0.54713	0.00365	0.53902	-60.10	0.53881	-60.13	0	21.81
+
