@@ -1,0 +1,60 @@
+### AWS x86_64 (c7i.24xl)
+
+|  Attribute    |     Value      |
+|---------------|----------------|
+| Environment   |aws|
+| Runner        |host|
+| Instance type |c7i.metal-24xl (dedicated)|
+| Architecture  |x86_64
+| CPU           |48 cores|
+| CPU settings  |disabled deeper C-states, disabled turbo boost, disabled hyper-threading|
+| RAM           |188 GB|
+| Kernel        |6.1.131-143.221.amzn2023.x86_64|
+| OS            |Amazon Linux 2023.7.20250331|
+| GCC           |11.5.0|
+| Time          |2025-04-16 00:49:43 UTC|
+
+### Laravel 11.1.2 demo app - 30 consecutive runs, 100 requests (sec)
+
+|     PHP     |     Min     |     Max     |    Std dev   |   Average  |  Average diff % |   Median   | Median diff % |     Memory    |
+|-------------|-------------|-------------|--------------|------------|-----------------|------------|---------------|---------------|
+|[PHP - baseline@d5f6](https://github.com/php/php-src/commit/d5f6e56610)|0.43799|0.44720|0.00154|0.43945|0.00%|0.43917|0.00%|41.84 MB|
+|[PHP - previous master](https://github.com/php/php-src/commit/3b87093bff)|0.43628|0.44017|0.00078|0.43725|-0.50%|0.43704|-0.49%|41.96 MB|
+|[PHP - master](https://github.com/php/php-src/commit/ea387fcfb7)|0.43663|0.44031|0.00084|0.43768|-0.40%|0.43742|-0.40%|41.95 MB|
+|[PHP - master (JIT)](https://github.com/php/php-src/commit/ea387fcfb7)|0.42367|0.42514|0.00038|0.42422|-3.47%|0.42422|-3.41%|50.85 MB|
+
+### Symfony 2.6.0 demo app - 30 consecutive runs, 100 requests (sec)
+
+|     PHP     |     Min     |     Max     |    Std dev   |   Average  |  Average diff % |   Median   | Median diff % |     Memory    |
+|-------------|-------------|-------------|--------------|------------|-----------------|------------|---------------|---------------|
+|[PHP - baseline@d5f6](https://github.com/php/php-src/commit/d5f6e56610)|0.71159|0.71513|0.00090|0.71290|0.00%|0.71265|0.00%|37.50 MB|
+|[PHP - previous master](https://github.com/php/php-src/commit/3b87093bff)|0.70243|0.71004|0.00132|0.70844|-0.63%|0.70854|-0.58%|37.63 MB|
+|[PHP - master](https://github.com/php/php-src/commit/ea387fcfb7)|0.70476|0.70840|0.00088|0.70655|-0.89%|0.70633|-0.89%|37.63 MB|
+|[PHP - master (JIT)](https://github.com/php/php-src/commit/ea387fcfb7)|0.67319|0.68184|0.00140|0.68024|-4.58%|0.68032|-4.54%|44.60 MB|
+
+### Wordpress 6.2 main page - 30 consecutive runs, 20 requests (sec)
+
+|     PHP     |     Min     |     Max     |    Std dev   |   Average  |  Average diff % |   Median   | Median diff % |     Memory    |
+|-------------|-------------|-------------|--------------|------------|-----------------|------------|---------------|---------------|
+|[PHP - baseline@d5f6](https://github.com/php/php-src/commit/d5f6e56610)|0.58144|0.58448|0.00063|0.58247|0.00%|0.58248|0.00%|43.05 MB|
+|[PHP - previous master](https://github.com/php/php-src/commit/3b87093bff)|0.57786|0.58144|0.00069|0.57907|-0.58%|0.57899|-0.60%|43.03 MB|
+|[PHP - master](https://github.com/php/php-src/commit/ea387fcfb7)|0.57608|0.57961|0.00061|0.57735|-0.88%|0.57739|-0.87%|43.03 MB|
+|[PHP - master (JIT)](https://github.com/php/php-src/commit/ea387fcfb7)|0.52012|0.52249|0.00059|0.52119|-10.52%|0.52116|-10.53%|62.14 MB|
+
+### bench.php - 25 consecutive runs (sec)
+
+|     PHP     |     Min     |     Max     |    Std dev   |   Average  |  Average diff % |   Median   | Median diff % |     Memory    |
+|-------------|-------------|-------------|--------------|------------|-----------------|------------|---------------|---------------|
+|[PHP - baseline@d5f6](https://github.com/php/php-src/commit/d5f6e56610)|0.21564|0.21964|0.00084|0.21717|0.00%|0.21720|0.00%|26.22 MB|
+|[PHP - previous master](https://github.com/php/php-src/commit/3b87093bff)|0.21760|0.22095|0.00094|0.21900|0.84%|0.21895|0.81%|26.24 MB|
+|[PHP - master](https://github.com/php/php-src/commit/ea387fcfb7)|0.21532|0.21785|0.00062|0.21611|-0.49%|0.21600|-0.55%|26.24 MB|
+|[PHP - master (JIT)](https://github.com/php/php-src/commit/ea387fcfb7)|0.07479|0.07859|0.00088|0.07633|-64.85%|0.07619|-64.92%|27.40 MB|
+
+### micro_bench.php - 25 consecutive runs (sec)
+
+|     PHP     |     Min     |     Max     |    Std dev   |   Average  |  Average diff % |   Median   | Median diff % |     Memory    |
+|-------------|-------------|-------------|--------------|------------|-----------------|------------|---------------|---------------|
+|[PHP - baseline@d5f6](https://github.com/php/php-src/commit/d5f6e56610)|1.33706|1.35639|0.00475|1.34708|0.00%|1.34723|0.00%|20.48 MB|
+|[PHP - previous master](https://github.com/php/php-src/commit/3b87093bff)|1.29268|1.31839|0.00592|1.30285|-3.28%|1.30252|-3.32%|20.50 MB|
+|[PHP - master](https://github.com/php/php-src/commit/ea387fcfb7)|1.26073|1.27419|0.00337|1.26611|-6.01%|1.26558|-6.06%|20.50 MB|
+|[PHP - master (JIT)](https://github.com/php/php-src/commit/ea387fcfb7)|0.53907|0.56430|0.00592|0.55132|-59.07%|0.55203|-59.03%|21.82 MB|
