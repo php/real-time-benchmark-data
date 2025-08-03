@@ -14,7 +14,7 @@
 | GCC           |11.5.0|
 | Time          |2025-08-02 00:50:14 UTC|
 
-### Laravel 11.1.2 demo app - 30 consecutive runs, 100 requests (sec)
+### Laravel 12.2.0 demo app - 30 consecutive runs, 100 requests (sec)
 
 |     PHP     |     Min     |     Max     |    Std dev   |   Average  |  Average diff % |   Median   | Median diff % |     Memory    |
 |-------------|-------------|-------------|--------------|------------|-----------------|------------|---------------|---------------|
@@ -23,7 +23,7 @@
 |[PHP - master](https://github.com/php/php-src/commit/55a3e33bb1)|0.46568|0.46797|0.00040|0.46650|-1.26%|0.46648|-1.14%|43.56 MB|
 |[PHP - master (JIT)](https://github.com/php/php-src/commit/55a3e33bb1)|0.44908|0.45095|0.00041|0.44988|-4.78%|0.44990|-4.65%|53.75 MB|
 
-### Symfony 2.6.0 demo app - 30 consecutive runs, 100 requests (sec)
+### Symfony 2.7.0 demo app - 30 consecutive runs, 100 requests (sec)
 
 |     PHP     |     Min     |     Max     |    Std dev   |   Average  |  Average diff % |   Median   | Median diff % |     Memory    |
 |-------------|-------------|-------------|--------------|------------|-----------------|------------|---------------|---------------|
