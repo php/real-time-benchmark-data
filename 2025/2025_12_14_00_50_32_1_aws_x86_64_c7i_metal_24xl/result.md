@@ -1,0 +1,51 @@
+### AWS x86_64 (c7i.24xl)
+
+|  Attribute    |     Value      |
+|---------------|----------------|
+| Environment   |aws|
+| Runner        |host|
+| Instance type |c7i.metal-24xl (dedicated)|
+| Architecture  |x86_64
+| CPU           |48 cores|
+| CPU settings  |disabled deeper C-states, disabled turbo boost, disabled hyper-threading|
+| RAM           |188 GB|
+| Kernel        |6.1.158-178.288.amzn2023.x86_64|
+| OS            |Amazon Linux 2023.9.20251117|
+| GCC           |14.2.1|
+| Time          |2025-12-14 00:50:32 UTC|
+
+### Laravel 12.2.0 demo app - 100 consecutive runs, 50 warmups, 100 requests (sec)
+
+|     PHP     |     Min     |     Max     |    Std dev   | Rel std dev % |  Mean  | Mean diff % |   Median   | Median diff % |   Skew  | P-value |  Instr count  |     Memory    |
+|-------------|-------------|-------------|--------------|---------------|--------|-------------|------------|---------------|---------|---------|---------------|---------------|
+|[PHP - baseline@d5f6](https://github.com/php/php-src/commit/d5f6e56610)|0.47074|0.47702|0.00076|0.16%|0.47510|0.00%|0.47506|0.00%|-1.371|0.999|180943678|43.62 MB|
+|[PHP - previous master](https://github.com/php/php-src/commit/2ee5e6b432)|0.46282|0.47407|0.00108|0.23%|0.46941|-1.20%|0.46927|-1.22%|-0.936|0.000|176337583|44.27 MB|
+|[PHP - master](https://github.com/php/php-src/commit/8ab11e77e8)|0.46662|0.47179|0.00080|0.17%|0.46792|-1.51%|0.46771|-1.55%|1.777|0.000|176408685|44.27 MB|
+|[PHP - master (JIT)](https://github.com/php/php-src/commit/8ab11e77e8)|0.44895|0.45194|0.00041|0.09%|0.44979|-5.33%|0.44975|-5.33%|1.547|0.000|147902981|53.39 MB|
+
+### Symfony 2.7.0 demo app - 100 consecutive runs, 50 warmups, 100 requests (sec)
+
+|     PHP     |     Min     |     Max     |    Std dev   | Rel std dev % |  Mean  | Mean diff % |   Median   | Median diff % |   Skew  | P-value |  Instr count  |     Memory    |
+|-------------|-------------|-------------|--------------|---------------|--------|-------------|------------|---------------|---------|---------|---------------|---------------|
+|[PHP - baseline@d5f6](https://github.com/php/php-src/commit/d5f6e56610)|0.74128|0.75436|0.00213|0.29%|0.74305|0.00%|0.74255|0.00%|3.993|0.999|291622012|40.10 MB|
+|[PHP - previous master](https://github.com/php/php-src/commit/2ee5e6b432)|0.74010|0.74698|0.00158|0.21%|0.74193|-0.15%|0.74138|-0.16%|1.421|0.000|290412929|40.50 MB|
+|[PHP - master](https://github.com/php/php-src/commit/8ab11e77e8)|0.74085|0.75085|0.00169|0.23%|0.74252|-0.07%|0.74200|-0.07%|2.917|0.000|290399988|40.75 MB|
+|[PHP - master (JIT)](https://github.com/php/php-src/commit/8ab11e77e8)|0.71454|0.71932|0.00073|0.10%|0.71567|-3.68%|0.71554|-3.64%|1.525|0.000|270762551|47.86 MB|
+
+### Wordpress 6.2 main page - 100 consecutive runs, 20 warmups, 20 requests (sec)
+
+|     PHP     |     Min     |     Max     |    Std dev   | Rel std dev % |  Mean  | Mean diff % |   Median   | Median diff % |   Skew  | P-value |  Instr count  |     Memory    |
+|-------------|-------------|-------------|--------------|---------------|--------|-------------|------------|---------------|---------|---------|---------------|---------------|
+|[PHP - baseline@d5f6](https://github.com/php/php-src/commit/d5f6e56610)|0.57858|0.58412|0.00083|0.14%|0.58086|0.00%|0.58082|0.00%|0.550|0.999|1123345333|43.74 MB|
+|[PHP - previous master](https://github.com/php/php-src/commit/2ee5e6b432)|0.57926|0.59042|0.00174|0.30%|0.58154|0.12%|0.58122|0.07%|3.977|0.000|1119623964|44.10 MB|
+|[PHP - master](https://github.com/php/php-src/commit/8ab11e77e8)|0.57871|0.59108|0.00134|0.23%|0.58153|0.12%|0.58144|0.11%|3.832|0.000|1119632934|44.10 MB|
+|[PHP - master (JIT)](https://github.com/php/php-src/commit/8ab11e77e8)|0.51477|0.51950|0.00071|0.14%|0.51705|-10.99%|0.51704|-10.98%|-0.014|0.000|865685762|61.50 MB|
+
+### bench.php - 100 consecutive runs, 10 warmups, 2 requests (sec)
+
+|     PHP     |     Min     |     Max     |    Std dev   | Rel std dev % |  Mean  | Mean diff % |   Median   | Median diff % |   Skew  | P-value |  Instr count  |     Memory    |
+|-------------|-------------|-------------|--------------|---------------|--------|-------------|------------|---------------|---------|---------|---------------|---------------|
+|[PHP - baseline@d5f6](https://github.com/php/php-src/commit/d5f6e56610)|0.42896|0.43964|0.00222|0.51%|0.43453|0.00%|0.43444|0.00%|0.048|0.999|2020638121|26.57 MB|
+|[PHP - previous master](https://github.com/php/php-src/commit/2ee5e6b432)|0.42599|0.43981|0.00266|0.62%|0.42967|-1.12%|0.42895|-1.26%|1.157|0.000|2020586693|26.99 MB|
+|[PHP - master](https://github.com/php/php-src/commit/8ab11e77e8)|0.42348|0.43800|0.00305|0.71%|0.42703|-1.73%|0.42615|-1.91%|1.911|0.000|2020586672|26.98 MB|
+|[PHP - master (JIT)](https://github.com/php/php-src/commit/8ab11e77e8)|0.14068|0.15096|0.00132|0.89%|0.14856|-65.81%|0.14858|-65.80%|-2.060|0.000|536605715|27.74 MB|
