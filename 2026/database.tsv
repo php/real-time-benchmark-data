@@ -218,3 +218,23 @@ bench.php	10	100	2	PHP - previous master	084e409694	https://github.com/php/php-s
 bench.php	10	100	2	PHP - master	03ca08948d	https://github.com/php/php-src/commit/03ca08948d	0.44087	0.44841	0.00173	0.38904	0.44426	3.71	0.44415	3.63	0.354	0.000	0	7.95
 bench.php	10	100	2	PHP - master (JIT)	03ca08948d	https://github.com/php/php-src/commit/03ca08948d	0.13802	0.14393	0.00128	0.90932	0.14086	-67.12	0.14092	-67.12	0.022	0.000	0	7.95
 
+URI	ID	Name	Environment	Runner	Instance type	Architecture	CPU	CPU cores	CPU frequency	RAM	Kernel	OS	GCC	Dedicated instance	Deeper C-states	Turbo boost	Hyper-threading	Time
+2026/2026_01_19_00_50_28_1_aws_x86_64_c7i_metal_24xl	aws_x86_64_c7i_metal_24xl	AWS x86_64 (c7i.24xl)	aws	host	c7i.metal-24xl	x86_64	Intel(R) Xeon(R) Platinum 8488C	48	2400	188	6.1.158-178.288.amzn2023.x86_64	Amazon Linux 2023.9.20251117	14.2.1	1	0	0	0	2026-01-19 00:50:28
+Test name	Test warmup	Test iterations	Test requests	PHP	PHP Commit hash	PHP Commit URL	Min	Max	Std dev	Rel std dev %	Mean	Mean diff %	Median	Median diff %	Skew	P-value	Instruction count	Memory usage
+Laravel 12.11.0 demo app	50	100	100	PHP - baseline@d5f6	d5f6e56610	https://github.com/php/php-src/commit/d5f6e56610	0.46114	0.46962	0.00112	0.24187	0.46194	0.00	0.46178	0.00	6.416	0.999	0	27.63
+Laravel 12.11.0 demo app	50	100	100	PHP - previous master	03ca08948d	https://github.com/php/php-src/commit/03ca08948d	0.45805	0.46163	0.00074	0.16179	0.45875	-0.69	0.45852	-0.71	2.098	0.000	0	27.02
+Laravel 12.11.0 demo app	50	100	100	PHP - master	7722a9a797	https://github.com/php/php-src/commit/7722a9a797	0.45810	0.46293	0.00074	0.16131	0.45885	-0.67	0.45860	-0.69	2.887	0.000	0	27.02
+Laravel 12.11.0 demo app	50	100	100	PHP - master (JIT)	7722a9a797	https://github.com/php/php-src/commit/7722a9a797	0.43876	0.44364	0.00064	0.14465	0.43951	-4.86	0.43943	-4.84	4.268	0.000	0	27.02
+Symfony 2.8.0 demo app	50	100	100	PHP - baseline@d5f6	d5f6e56610	https://github.com/php/php-src/commit/d5f6e56610	0.76265	0.78375	0.00257	0.33308	0.77084	0.00	0.77057	0.00	1.515	0.999	0	27.66
+Symfony 2.8.0 demo app	50	100	100	PHP - previous master	03ca08948d	https://github.com/php/php-src/commit/03ca08948d	0.76083	0.77941	0.00324	0.42186	0.76747	-0.44	0.76876	-0.23	-0.252	0.000	0	27.05
+Symfony 2.8.0 demo app	50	100	100	PHP - master	7722a9a797	https://github.com/php/php-src/commit/7722a9a797	0.76168	0.77944	0.00144	0.18756	0.76900	-0.24	0.76885	-0.22	2.731	0.000	0	27.05
+Symfony 2.8.0 demo app	50	100	100	PHP - master (JIT)	7722a9a797	https://github.com/php/php-src/commit/7722a9a797	0.73930	0.98414	0.09439	11.46804	0.82309	6.78	0.79137	2.70	0.716	0.051	0	27.05
+Wordpress 6.9 main page	20	100	20	PHP - baseline@d5f6	d5f6e56610	https://github.com/php/php-src/commit/d5f6e56610	0.66002	0.68207	0.00351	0.53075	0.66169	0.00	0.66110	0.00	5.438	0.999	0	27.66
+Wordpress 6.9 main page	20	100	20	PHP - previous master	03ca08948d	https://github.com/php/php-src/commit/03ca08948d	0.66252	0.68344	0.00345	0.51958	0.66426	0.39	0.66357	0.37	5.266	0.000	0	27.05
+Wordpress 6.9 main page	20	100	20	PHP - master	7722a9a797	https://github.com/php/php-src/commit/7722a9a797	0.66266	0.68397	0.00342	0.51508	0.66455	0.43	0.66361	0.38	4.405	0.000	0	27.05
+Wordpress 6.9 main page	20	100	20	PHP - master (JIT)	7722a9a797	https://github.com/php/php-src/commit/7722a9a797	0.59379	0.59937	0.00109	0.18276	0.59499	-10.08	0.59463	-10.05	2.740	0.000	0	27.05
+bench.php	10	100	2	PHP - baseline@d5f6	d5f6e56610	https://github.com/php/php-src/commit/d5f6e56610	0.42561	0.43337	0.00140	0.32697	0.42825	0.00	0.42797	0.00	0.560	0.999	0	7.93
+bench.php	10	100	2	PHP - previous master	03ca08948d	https://github.com/php/php-src/commit/03ca08948d	0.44085	0.44963	0.00166	0.37403	0.44399	3.67	0.44407	3.76	0.606	0.000	0	7.93
+bench.php	10	100	2	PHP - master	7722a9a797	https://github.com/php/php-src/commit/7722a9a797	0.44068	0.44734	0.00166	0.37287	0.44389	3.65	0.44372	3.68	0.189	0.000	0	7.93
+bench.php	10	100	2	PHP - master (JIT)	7722a9a797	https://github.com/php/php-src/commit/7722a9a797	0.13753	0.14442	0.00130	0.91998	0.14105	-67.06	0.14104	-67.04	0.027	0.000	0	7.93
+
