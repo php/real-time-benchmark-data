@@ -818,3 +818,23 @@ bench.php	20	50	2	PHP - previous master	115ea486ac	https://github.com/php/php-sr
 bench.php	20	50	2	PHP - master	76445cabc0	https://github.com/php/php-src/commit/76445cabc0	0.44456	0.44724	0.00053	0.11970	0.44573	0.63	0.44580	0.69	-0.103	-8.269	0.000	25.32
 bench.php	20	50	2	PHP - master (JIT)	76445cabc0	https://github.com/php/php-src/commit/76445cabc0	0.14344	0.14505	0.00028	0.19355	0.14379	-67.54	0.14373	-67.54	2.182	8.614	0.000	25.44
 
+URI	ID	Name	Environment	Runner	Instance type	Architecture	CPU	CPU cores	CPU frequency	RAM	Kernel	OS	GCC	Dedicated instance	Deeper C-states	Turbo boost	Hyper-threading	Time
+2026/2026_02_19_00_56_19_1_aws_x86_64_c6id.metal	aws_x86_64_c6id.metal	AWS x86_64 (c6id.metal)	aws	host	c6id.metal	x86_64	Intel(R) Xeon(R) Platinum 8375C CPU @ 2.90GHz	64	2900	251	6.12.66-88.122.amzn2023.x86_64	Amazon Linux 2023.10.20260202	14.2.1	0	0	0	0	2026-02-19 00:56:19
+Test name	Test warmup	Test iterations	Test requests	PHP	PHP Commit hash	PHP Commit URL	Min	Max	Std dev	Rel std dev %	Mean	Mean diff %	Median	Median diff %	Skewness	Z-stat	P-value	Memory usage
+Laravel 12.11.0 demo app	50	50	100	PHP - baseline@d5f6e56	d5f6e56610	https://github.com/php/php-src/commit/d5f6e56610	0.39453	0.39658	0.00041	0.10387	0.39503	0.00	0.39496	0.00	2.611	0.000	1.000	26.28
+Laravel 12.11.0 demo app	50	50	100	PHP - previous master	76445cabc0	https://github.com/php/php-src/commit/76445cabc0	0.38909	0.39302	0.00084	0.21494	0.38985	-1.31	0.38958	-1.36	2.643	8.614	0.000	25.26
+Laravel 12.11.0 demo app	50	50	100	PHP - master	fa2caa0403	https://github.com/php/php-src/commit/fa2caa0403	0.38941	0.39247	0.00060	0.15449	0.38993	-1.29	0.38974	-1.32	3.052	8.614	0.000	25.26
+Laravel 12.11.0 demo app	50	50	100	PHP - master (JIT)	fa2caa0403	https://github.com/php/php-src/commit/fa2caa0403	0.36084	0.36290	0.00042	0.11613	0.36131	-8.54	0.36115	-8.56	1.840	8.614	0.000	25.37
+Symfony 2.8.0 demo app	50	50	100	PHP - baseline@d5f6e56	d5f6e56610	https://github.com/php/php-src/commit/d5f6e56610	0.66783	0.67091	0.00059	0.08794	0.66858	0.00	0.66840	0.00	1.760	0.000	1.000	26.73
+Symfony 2.8.0 demo app	50	50	100	PHP - previous master	76445cabc0	https://github.com/php/php-src/commit/76445cabc0	0.66016	0.66517	0.00070	0.10575	0.66064	-1.19	0.66052	-1.18	5.742	8.614	0.000	25.31
+Symfony 2.8.0 demo app	50	50	100	PHP - master	fa2caa0403	https://github.com/php/php-src/commit/fa2caa0403	0.66012	0.66273	0.00055	0.08354	0.66093	-1.15	0.66077	-1.14	1.317	8.614	0.000	25.31
+Symfony 2.8.0 demo app	50	50	100	PHP - master (JIT)	fa2caa0403	https://github.com/php/php-src/commit/fa2caa0403	0.62916	0.63050	0.00032	0.05014	0.62966	-5.82	0.62964	-5.80	0.781	8.614	0.000	25.36
+Wordpress 6.9 main page	20	50	20	PHP - baseline@d5f6e56	d5f6e56610	https://github.com/php/php-src/commit/d5f6e56610	0.58733	0.59325	0.00116	0.19639	0.58954	0.00	0.58929	0.00	0.578	0.000	1.000	26.73
+Wordpress 6.9 main page	20	50	20	PHP - previous master	76445cabc0	https://github.com/php/php-src/commit/76445cabc0	0.58526	0.58908	0.00077	0.13110	0.58631	-0.55	0.58608	-0.54	2.751	8.245	0.000	25.28
+Wordpress 6.9 main page	20	50	20	PHP - master	fa2caa0403	https://github.com/php/php-src/commit/fa2caa0403	0.58559	0.59248	0.00101	0.17148	0.58649	-0.52	0.58623	-0.52	4.627	8.214	0.000	25.27
+Wordpress 6.9 main page	20	50	20	PHP - master (JIT)	fa2caa0403	https://github.com/php/php-src/commit/fa2caa0403	0.51634	0.51974	0.00047	0.09092	0.51721	-12.27	0.51713	-12.24	3.078	8.614	0.000	25.39
+bench.php	20	50	2	PHP - baseline@d5f6e56	d5f6e56610	https://github.com/php/php-src/commit/d5f6e56610	0.44173	0.44411	0.00056	0.12655	0.44285	0.00	0.44281	0.00	0.272	0.000	1.000	26.77
+bench.php	20	50	2	PHP - previous master	76445cabc0	https://github.com/php/php-src/commit/76445cabc0	0.44451	0.44924	0.00068	0.15252	0.44579	0.66	0.44573	0.66	2.551	-8.614	0.000	25.32
+bench.php	20	50	2	PHP - master	fa2caa0403	https://github.com/php/php-src/commit/fa2caa0403	0.44435	0.44676	0.00053	0.11918	0.44569	0.64	0.44569	0.65	-0.315	-8.614	0.000	25.32
+bench.php	20	50	2	PHP - master (JIT)	fa2caa0403	https://github.com/php/php-src/commit/fa2caa0403	0.14339	0.14483	0.00027	0.18544	0.14375	-67.54	0.14373	-67.54	1.701	8.614	0.000	25.44
+
