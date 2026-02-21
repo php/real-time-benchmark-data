@@ -1,0 +1,52 @@
+### AWS x86_64 (c6id.metal)
+
+|  Attribute    |     Value      |
+|---------------|----------------|
+| Environment   |aws|
+| Instance type |c6id.metal|
+| Architecture  |x86_64
+| CPU           |Intel(R) Xeon(R) Platinum 8375C CPU @ 2.90GHz, 64 cores @ 2900 MHz|
+| CPU settings  |disabled deeper C-states, disabled turbo boost, disabled hyper-threading|
+| RAM           |251 GB|
+| Kernel        |6.12.66-88.122.amzn2023.x86_64|
+| OS            |Amazon Linux 2023.10.20260202|
+| GCC           |14.2.1|
+| Time          |2026-02-21 00:52:19 UTC|
+| Job details  |https://github.com/php/php-src/actions/runs/22246981677 ([Artifacts](https://github.com/php/php-src/actions/runs/22246981677/artifacts/5598678076))|
+| Changeset  |https://github.com/php/php-src/compare/c891263900..da6d890e00|
+
+### Laravel 12.11.0 demo app - 50 iterations, 50 warmups, 100 requests (sec)
+
+|     PHP     |     Min     |     Max     |    Std dev   | Rel std dev % |  Mean  | Mean diff % |   Median   | Median diff % | Skewness |  Z-stat  | P-value |     Memory    |
+|-------------|-------------|-------------|--------------|---------------|--------|-------------|------------|---------------|----------|----------|---------|---------------|
+|[PHP - baseline@d5f6e56](https://github.com/php/php-src/commit/d5f6e56610)|0.39664|0.39739|0.00018|0.04%|0.39687|0.00%|0.39686|0.00%|1.013|0.000|1.000|26.28 MB|
+|[PHP - previous master](https://github.com/php/php-src/commit/c891263900)|0.39134|0.39476|0.00059|0.15%|0.39184|-1.27%|0.39173|-1.29%|3.298|8.614|0.000|25.26 MB|
+|[PHP - master](https://github.com/php/php-src/commit/da6d890e00)|0.39134|0.39347|0.00034|0.09%|0.39178|-1.28%|0.39171|-1.30%|3.207|8.614|0.000|25.26 MB|
+|[PHP - master (JIT)](https://github.com/php/php-src/commit/da6d890e00)|0.36276|0.36492|0.00037|0.10%|0.36355|-8.40%|0.36348|-8.41%|1.164|8.614|0.000|25.37 MB|
+
+### Symfony 2.8.0 demo app - 50 iterations, 50 warmups, 100 requests (sec)
+
+|     PHP     |     Min     |     Max     |    Std dev   | Rel std dev % |  Mean  | Mean diff % |   Median   | Median diff % | Skewness |  Z-stat  | P-value |     Memory    |
+|-------------|-------------|-------------|--------------|---------------|--------|-------------|------------|---------------|----------|----------|---------|---------------|
+|[PHP - baseline@d5f6e56](https://github.com/php/php-src/commit/d5f6e56610)|0.66994|0.67148|0.00044|0.07%|0.67055|0.00%|0.67046|0.00%|0.736|0.000|1.000|26.73 MB|
+|[PHP - previous master](https://github.com/php/php-src/commit/c891263900)|0.66175|0.66507|0.00068|0.10%|0.66248|-1.20%|0.66227|-1.22%|1.975|8.614|0.000|25.31 MB|
+|[PHP - master](https://github.com/php/php-src/commit/da6d890e00)|0.66199|0.66416|0.00039|0.06%|0.66269|-1.17%|0.66260|-1.17%|1.447|8.614|0.000|25.31 MB|
+|[PHP - master (JIT)](https://github.com/php/php-src/commit/da6d890e00)|0.63095|0.63314|0.00056|0.09%|0.63166|-5.80%|0.63146|-5.82%|1.444|8.614|0.000|25.36 MB|
+
+### Wordpress 6.9 main page - 50 iterations, 20 warmups, 20 requests (sec)
+
+|     PHP     |     Min     |     Max     |    Std dev   | Rel std dev % |  Mean  | Mean diff % |   Median   | Median diff % | Skewness |  Z-stat  | P-value |     Memory    |
+|-------------|-------------|-------------|--------------|---------------|--------|-------------|------------|---------------|----------|----------|---------|---------------|
+|[PHP - baseline@d5f6e56](https://github.com/php/php-src/commit/d5f6e56610)|0.58966|0.59415|0.00105|0.18%|0.59156|0.00%|0.59161|0.00%|0.326|0.000|1.000|26.73 MB|
+|[PHP - previous master](https://github.com/php/php-src/commit/c891263900)|0.58701|0.59073|0.00051|0.09%|0.58788|-0.62%|0.58782|-0.64%|3.881|8.538|0.000|25.28 MB|
+|[PHP - master](https://github.com/php/php-src/commit/da6d890e00)|0.58737|0.59151|0.00081|0.14%|0.58832|-0.55%|0.58809|-0.60%|2.534|8.235|0.000|25.27 MB|
+|[PHP - master (JIT)](https://github.com/php/php-src/commit/da6d890e00)|0.51879|0.52303|0.00080|0.15%|0.51969|-12.15%|0.51951|-12.19%|3.049|8.614|0.000|25.39 MB|
+
+### bench.php - 50 iterations, 20 warmups, 2 requests (sec)
+
+|     PHP     |     Min     |     Max     |    Std dev   | Rel std dev % |  Mean  | Mean diff % |   Median   | Median diff % | Skewness |  Z-stat  | P-value |     Memory    |
+|-------------|-------------|-------------|--------------|---------------|--------|-------------|------------|---------------|----------|----------|---------|---------------|
+|[PHP - baseline@d5f6e56](https://github.com/php/php-src/commit/d5f6e56610)|0.44146|0.44446|0.00057|0.13%|0.44291|0.00%|0.44287|0.00%|0.547|0.000|1.000|26.73 MB|
+|[PHP - previous master](https://github.com/php/php-src/commit/c891263900)|0.44394|0.44905|0.00080|0.18%|0.44570|0.63%|0.44553|0.60%|1.459|-8.593|0.000|25.28 MB|
+|[PHP - master](https://github.com/php/php-src/commit/da6d890e00)|0.44465|0.44809|0.00056|0.13%|0.44587|0.67%|0.44587|0.68%|0.841|-8.614|0.000|25.27 MB|
+|[PHP - master (JIT)](https://github.com/php/php-src/commit/da6d890e00)|0.14352|0.14441|0.00022|0.15%|0.14387|-67.52%|0.14388|-67.51%|0.429|8.614|0.000|25.39 MB|
