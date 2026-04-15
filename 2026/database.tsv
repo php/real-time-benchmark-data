@@ -1838,3 +1838,23 @@ bench.php	20	50	2	PHP - previous master	21811294fa	https://github.com/php/php-sr
 bench.php	20	50	2	PHP - master	d648cc1087	https://github.com/php/php-src/commit/d648cc1087	0.44540	0.44794	0.00058	0.12998	0.44666	0.85	0.44675	0.90	-0.399	-8.193	0.000	25.24
 bench.php	20	50	2	PHP - master (JIT)	d648cc1087	https://github.com/php/php-src/commit/d648cc1087	0.14312	0.14399	0.00020	0.14044	0.14347	-67.61	0.14342	-67.61	0.586	8.614	0.000	25.18
 
+URI	ID	Name	Environment	Runner	Instance type	Architecture	CPU	CPU cores	CPU frequency	RAM	Kernel	OS	GCC	Dedicated instance	Deeper C-states	Turbo boost	Hyper-threading	Time
+2026/2026_04_15_01_06_45_1_aws_x86_64_c6id.metal	aws_x86_64_c6id.metal	AWS x86_64 (c6id.metal)	aws	host	c6id.metal	x86_64	Intel(R) Xeon(R) Platinum 8375C CPU @ 2.90GHz	64	2900	251	6.12.66-88.122.amzn2023.x86_64	Amazon Linux 2023.10.20260202	14.2.1	0	0	0	0	2026-04-15 01:06:45
+Test name	Test warmup	Test iterations	Test requests	PHP	PHP Commit hash	PHP Commit URL	Min	Max	Std dev	Rel std dev %	Mean	Mean diff %	Median	Median diff %	Skewness	Z-stat	P-value	Memory usage
+Laravel 12.11.0 demo app	50	50	100	PHP - baseline@d5f6e56	d5f6e56610	https://github.com/php/php-src/commit/d5f6e56610	0.39950	0.40195	0.00060	0.14927	0.40016	0.00	0.39992	0.00	1.795	0.000	1.000	26.29
+Laravel 12.11.0 demo app	50	50	100	PHP - previous master	d648cc1087	https://github.com/php/php-src/commit/d648cc1087	0.39168	0.39350	0.00030	0.07736	0.39210	-2.01	0.39205	-1.97	2.240	8.614	0.000	25.29
+Laravel 12.11.0 demo app	50	50	100	PHP - master	1195f271d0	https://github.com/php/php-src/commit/1195f271d0	0.39103	0.39265	0.00042	0.10613	0.39158	-2.14	0.39141	-2.13	1.230	8.614	0.000	25.18
+Laravel 12.11.0 demo app	50	50	100	PHP - master (JIT)	1195f271d0	https://github.com/php/php-src/commit/1195f271d0	0.36480	0.36728	0.00056	0.15359	0.36553	-8.65	0.36537	-8.64	1.756	8.614	0.000	25.32
+Symfony 2.8.0 demo app	50	50	100	PHP - baseline@d5f6e56	d5f6e56610	https://github.com/php/php-src/commit/d5f6e56610	0.67307	0.67765	0.00078	0.11515	0.67394	0.00	0.67370	0.00	2.655	0.000	1.000	26.74
+Symfony 2.8.0 demo app	50	50	100	PHP - previous master	d648cc1087	https://github.com/php/php-src/commit/d648cc1087	0.67199	0.67545	0.00059	0.08845	0.67256	-0.20	0.67237	-0.20	2.787	7.842	0.000	25.22
+Symfony 2.8.0 demo app	50	50	100	PHP - master	1195f271d0	https://github.com/php/php-src/commit/1195f271d0	0.67149	0.67481	0.00066	0.09763	0.67215	-0.26	0.67195	-0.26	2.458	7.911	0.000	25.19
+Symfony 2.8.0 demo app	50	50	100	PHP - master (JIT)	1195f271d0	https://github.com/php/php-src/commit/1195f271d0	0.63853	0.64090	0.00054	0.08509	0.63928	-5.14	0.63913	-5.13	1.452	8.614	0.000	25.19
+Wordpress 6.9 main page	20	50	20	PHP - baseline@d5f6e56	d5f6e56610	https://github.com/php/php-src/commit/d5f6e56610	0.59292	0.59745	0.00094	0.15876	0.59483	0.00	0.59496	0.00	0.113	0.000	1.000	26.74
+Wordpress 6.9 main page	20	50	20	PHP - previous master	d648cc1087	https://github.com/php/php-src/commit/d648cc1087	0.59080	0.59361	0.00048	0.08077	0.59183	-0.50	0.59177	-0.54	1.441	8.559	0.000	25.29
+Wordpress 6.9 main page	20	50	20	PHP - master	1195f271d0	https://github.com/php/php-src/commit/1195f271d0	0.59018	0.59793	0.00138	0.23319	0.59184	-0.50	0.59156	-0.57	3.678	7.842	0.000	25.27
+Wordpress 6.9 main page	20	50	20	PHP - master (JIT)	1195f271d0	https://github.com/php/php-src/commit/1195f271d0	0.52127	0.52511	0.00063	0.12022	0.52233	-12.19	0.52225	-12.22	2.744	8.614	0.000	25.21
+bench.php	20	50	2	PHP - baseline@d5f6e56	d5f6e56610	https://github.com/php/php-src/commit/d5f6e56610	0.44185	0.44426	0.00058	0.13025	0.44294	0.00	0.44289	0.00	0.326	0.000	1.000	26.74
+bench.php	20	50	2	PHP - previous master	d648cc1087	https://github.com/php/php-src/commit/d648cc1087	0.44579	0.44855	0.00058	0.12973	0.44683	0.88	0.44676	0.87	0.552	-8.614	0.000	25.29
+bench.php	20	50	2	PHP - master	1195f271d0	https://github.com/php/php-src/commit/1195f271d0	0.44521	0.45019	0.00071	0.15909	0.44642	0.79	0.44637	0.78	3.039	-8.614	0.000	25.27
+bench.php	20	50	2	PHP - master (JIT)	1195f271d0	https://github.com/php/php-src/commit/1195f271d0	0.14323	0.14666	0.00046	0.32163	0.14371	-67.55	0.14366	-67.56	5.441	8.614	0.000	25.21
+
