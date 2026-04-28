@@ -1,0 +1,17 @@
+Test name	Test warmup	Test iterations	Test requests	PHP	PHP Commit hash	PHP Commit URL	Min	Max	Std dev	Rel std dev %	Mean	Mean diff %	Median	Median diff %	Skewness	Z-stat	P-value	Memory usage
+Laravel 12.11.0 demo app	50	50	100	PHP - baseline@d5f6e56	d5f6e56610	https://github.com/php/php-src/commit/d5f6e56610	0.39478	0.39702	0.00068	0.17173	0.39555	0.00	0.39521	0.00	0.991	0.000	1.000	26.29
+Laravel 12.11.0 demo app	50	50	100	PHP - previous master	bd78496fb3	https://github.com/php/php-src/commit/bd78496fb3	0.38654	0.38778	0.00030	0.07778	0.38693	-2.18	0.38684	-2.12	0.993	8.614	0.000	25.36
+Laravel 12.11.0 demo app	50	50	100	PHP - master	936f727106	https://github.com/php/php-src/commit/936f727106	0.38667	0.38983	0.00053	0.13646	0.38719	-2.11	0.38706	-2.06	3.588	8.614	0.000	25.30
+Laravel 12.11.0 demo app	50	50	100	PHP - master (JIT)	936f727106	https://github.com/php/php-src/commit/936f727106	0.36399	0.36683	0.00043	0.11771	0.36495	-7.73	0.36491	-7.67	1.854	8.614	0.000	25.29
+Symfony 2.8.0 demo app	50	50	100	PHP - baseline@d5f6e56	d5f6e56610	https://github.com/php/php-src/commit/d5f6e56610	0.66866	0.67043	0.00047	0.07021	0.66936	0.00	0.66923	0.00	0.943	0.000	1.000	26.74
+Symfony 2.8.0 demo app	50	50	100	PHP - previous master	bd78496fb3	https://github.com/php/php-src/commit/bd78496fb3	0.66593	0.67106	0.00080	0.12014	0.66666	-0.40	0.66640	-0.42	3.850	8.269	0.000	25.24
+Symfony 2.8.0 demo app	50	50	100	PHP - master	936f727106	https://github.com/php/php-src/commit/936f727106	0.66365	0.66506	0.00038	0.05776	0.66419	-0.77	0.66406	-0.77	0.634	8.614	0.000	25.35
+Symfony 2.8.0 demo app	50	50	100	PHP - master (JIT)	936f727106	https://github.com/php/php-src/commit/936f727106	0.63284	0.63421	0.00030	0.04756	0.63324	-5.40	0.63317	-5.39	1.388	8.614	0.000	25.21
+Wordpress 6.9 main page	20	50	20	PHP - baseline@d5f6e56	d5f6e56610	https://github.com/php/php-src/commit/d5f6e56610	0.58787	0.59235	0.00099	0.16775	0.58987	0.00	0.59002	0.00	0.068	0.000	1.000	26.74
+Wordpress 6.9 main page	20	50	20	PHP - previous master	bd78496fb3	https://github.com/php/php-src/commit/bd78496fb3	0.58397	0.58741	0.00063	0.10705	0.58485	-0.85	0.58478	-0.89	2.479	8.614	0.000	25.26
+Wordpress 6.9 main page	20	50	20	PHP - master	936f727106	https://github.com/php/php-src/commit/936f727106	0.58435	0.58753	0.00051	0.08754	0.58529	-0.78	0.58515	-0.83	2.250	8.614	0.000	25.25
+Wordpress 6.9 main page	20	50	20	PHP - master (JIT)	936f727106	https://github.com/php/php-src/commit/936f727106	0.51354	0.51694	0.00078	0.15147	0.51461	-12.76	0.51439	-12.82	1.622	8.614	0.000	25.30
+bench.php	20	50	2	PHP - baseline@d5f6e56	d5f6e56610	https://github.com/php/php-src/commit/d5f6e56610	0.44135	0.45010	0.00154	0.34715	0.44297	0.00	0.44264	0.00	3.829	0.000	1.000	26.74
+bench.php	20	50	2	PHP - previous master	bd78496fb3	https://github.com/php/php-src/commit/bd78496fb3	0.44516	0.44745	0.00051	0.11484	0.44642	0.78	0.44641	0.85	0.008	-7.924	0.000	25.26
+bench.php	20	50	2	PHP - master	936f727106	https://github.com/php/php-src/commit/936f727106	0.44551	0.44730	0.00050	0.11161	0.44635	0.76	0.44629	0.82	0.087	-7.924	0.000	25.25
+bench.php	20	50	2	PHP - master (JIT)	936f727106	https://github.com/php/php-src/commit/936f727106	0.14310	0.14459	0.00024	0.16617	0.14354	-67.60	0.14353	-67.57	1.639	8.614	0.000	25.30
