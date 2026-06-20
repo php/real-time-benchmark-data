@@ -3038,3 +3038,23 @@ bench.php	20	50	2	PHP - previous master	2efafdb11d	https://github.com/php/php-sr
 bench.php	20	50	2	PHP - master	e71b4e5928	https://github.com/php/php-src/commit/e71b4e5928	0.44952	0.45208	0.00054	0.12077	0.45074	1.37	0.45067	1.35	0.304	-8.614	0.000	25.85
 bench.php	20	50	2	PHP - master (JIT)	e71b4e5928	https://github.com/php/php-src/commit/e71b4e5928	0.14451	0.14539	0.00019	0.13196	0.14486	-67.42	0.14484	-67.43	0.615	8.614	0.000	26.23
 
+URI	ID	Name	Environment	Runner	Instance type	Architecture	CPU	CPU cores	CPU frequency	RAM	Kernel	OS	GCC	Dedicated instance	Deeper C-states	Turbo boost	Hyper-threading	Time
+2026/2026_06_20_01_27_05_1_aws_x86_64_c6id.metal	aws_x86_64_c6id.metal	AWS x86_64 (c6id.metal)	aws	host	c6id.metal	x86_64	Intel(R) Xeon(R) Platinum 8375C CPU @ 2.90GHz	64	2900	251	6.18.20-20.229.amzn2023.x86_64	Amazon Linux 2023.11.20260427	14.2.1	0	0	0	0	2026-06-20 01:27:05
+Test name	Test warmup	Test iterations	Test requests	PHP	PHP Commit hash	PHP Commit URL	Min	Max	Std dev	Rel std dev %	Mean	Mean diff %	Median	Median diff %	Skewness	Z-stat	P-value	Memory usage
+Laravel 12.11.0 demo app	50	50	100	PHP - baseline@d5f6e56	d5f6e56610	https://github.com/php/php-src/commit/d5f6e56610	0.39958	0.40027	0.00017	0.04128	0.39987	0.00	0.39987	0.00	0.372	0.000	1.000	26.71
+Laravel 12.11.0 demo app	50	50	100	PHP - previous master	e71b4e5928	https://github.com/php/php-src/commit/e71b4e5928	0.39054	0.39275	0.00045	0.11434	0.39106	-2.20	0.39092	-2.24	1.645	8.614	0.000	25.77
+Laravel 12.11.0 demo app	50	50	100	PHP - master	4d559cad69	https://github.com/php/php-src/commit/4d559cad69	0.39156	0.39523	0.00064	0.16255	0.39210	-1.94	0.39189	-1.99	3.130	8.614	0.000	25.77
+Laravel 12.11.0 demo app	50	50	100	PHP - master (JIT)	4d559cad69	https://github.com/php/php-src/commit/4d559cad69	0.36609	0.36892	0.00041	0.11248	0.36655	-8.33	0.36646	-8.35	4.094	8.614	0.000	25.78
+Symfony 2.8.0 demo app	50	50	100	PHP - baseline@d5f6e56	d5f6e56610	https://github.com/php/php-src/commit/d5f6e56610	0.67870	0.68151	0.00061	0.08974	0.67958	0.00	0.67945	0.00	1.302	0.000	1.000	26.79
+Symfony 2.8.0 demo app	50	50	100	PHP - previous master	e71b4e5928	https://github.com/php/php-src/commit/e71b4e5928	0.67002	0.67798	0.00154	0.22926	0.67141	-1.20	0.67063	-1.30	1.951	8.614	0.000	25.78
+Symfony 2.8.0 demo app	50	50	100	PHP - master	4d559cad69	https://github.com/php/php-src/commit/4d559cad69	0.67024	0.67713	0.00148	0.22055	0.67162	-1.17	0.67097	-1.25	1.996	8.614	0.000	25.76
+Symfony 2.8.0 demo app	50	50	100	PHP - master (JIT)	4d559cad69	https://github.com/php/php-src/commit/4d559cad69	0.63821	0.64489	0.00093	0.14569	0.63907	-5.96	0.63882	-5.98	5.227	8.614	0.000	26.26
+Wordpress 6.9 main page	20	50	20	PHP - baseline@d5f6e56	d5f6e56610	https://github.com/php/php-src/commit/d5f6e56610	0.59361	0.59708	0.00090	0.15055	0.59519	0.00	0.59507	0.00	0.375	0.000	1.000	26.66
+Wordpress 6.9 main page	20	50	20	PHP - previous master	e71b4e5928	https://github.com/php/php-src/commit/e71b4e5928	0.58935	0.59248	0.00061	0.10310	0.59019	-0.84	0.59015	-0.83	1.555	8.614	0.000	25.86
+Wordpress 6.9 main page	20	50	20	PHP - master	4d559cad69	https://github.com/php/php-src/commit/4d559cad69	0.58951	0.59347	0.00069	0.11635	0.59026	-0.83	0.59006	-0.84	2.646	8.614	0.000	25.85
+Wordpress 6.9 main page	20	50	20	PHP - master (JIT)	4d559cad69	https://github.com/php/php-src/commit/4d559cad69	0.52337	0.52767	0.00101	0.19243	0.52442	-11.89	0.52413	-11.92	2.194	8.614	0.000	26.23
+bench.php	20	50	2	PHP - baseline@d5f6e56	d5f6e56610	https://github.com/php/php-src/commit/d5f6e56610	0.44331	0.44710	0.00060	0.13570	0.44467	0.00	0.44466	0.00	1.134	0.000	1.000	26.66
+bench.php	20	50	2	PHP - previous master	e71b4e5928	https://github.com/php/php-src/commit/e71b4e5928	0.44917	0.45341	0.00065	0.14460	0.45077	1.37	0.45088	1.40	1.002	-8.614	0.000	25.86
+bench.php	20	50	2	PHP - master	4d559cad69	https://github.com/php/php-src/commit/4d559cad69	0.44924	0.45326	0.00078	0.17332	0.45075	1.37	0.45077	1.37	0.436	-8.614	0.000	25.85
+bench.php	20	50	2	PHP - master (JIT)	4d559cad69	https://github.com/php/php-src/commit/4d559cad69	0.14429	0.14534	0.00019	0.12879	0.14482	-67.43	0.14483	-67.43	-0.330	8.614	0.000	26.23
+
