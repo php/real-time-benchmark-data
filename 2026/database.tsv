@@ -3258,3 +3258,23 @@ bench.php	20	50	2	PHP - previous master	092de40341	https://github.com/php/php-sr
 bench.php	20	50	2	PHP - master	19f94430d5	https://github.com/php/php-src/commit/19f94430d5	0.45000	0.45469	0.00081	0.17865	0.45130	1.41	0.45119	1.48	1.886	-7.952	0.000	26.18
 bench.php	20	50	2	PHP - master (JIT)	19f94430d5	https://github.com/php/php-src/commit/19f94430d5	0.14405	0.14589	0.00028	0.19476	0.14447	-67.54	0.14446	-67.51	2.616	8.614	0.000	26.24
 
+URI	ID	Name	Environment	Runner	Instance type	Architecture	CPU	CPU cores	CPU frequency	RAM	Kernel	OS	GCC	Dedicated instance	Deeper C-states	Turbo boost	Hyper-threading	Time
+2026/2026_07_05_01_09_59_1_aws_x86_64_c6id.metal	aws_x86_64_c6id.metal	AWS x86_64 (c6id.metal)	aws	host	c6id.metal	x86_64	Intel(R) Xeon(R) Platinum 8375C CPU @ 2.90GHz	64	2900	251	6.18.20-20.229.amzn2023.x86_64	Amazon Linux 2023.11.20260427	14.2.1	0	0	0	0	2026-07-05 01:09:59
+Test name	Test warmup	Test iterations	Test requests	PHP	PHP Commit hash	PHP Commit URL	Min	Max	Std dev	Rel std dev %	Mean	Mean diff %	Median	Median diff %	Skewness	Z-stat	P-value	Memory usage
+Laravel 12.11.0 demo app	50	50	100	PHP - baseline@d5f6e56	d5f6e56610	https://github.com/php/php-src/commit/d5f6e56610	0.39823	0.40040	0.00072	0.18122	0.39887	0.00	0.39858	0.00	1.376	0.000	1.000	26.71
+Laravel 12.11.0 demo app	50	50	100	PHP - previous master	19f94430d5	https://github.com/php/php-src/commit/19f94430d5	0.38926	0.39108	0.00035	0.08949	0.39001	-2.22	0.38998	-2.16	1.031	8.614	0.000	25.80
+Laravel 12.11.0 demo app	50	50	100	PHP - master	dcfa40cccf	https://github.com/php/php-src/commit/dcfa40cccf	0.38973	0.39204	0.00043	0.11018	0.39053	-2.09	0.39046	-2.04	1.164	8.614	0.000	25.73
+Laravel 12.11.0 demo app	50	50	100	PHP - master (JIT)	dcfa40cccf	https://github.com/php/php-src/commit/dcfa40cccf	0.36385	0.36709	0.00065	0.17773	0.36477	-8.55	0.36458	-8.53	1.573	8.614	0.000	25.86
+Symfony 2.8.0 demo app	50	50	100	PHP - baseline@d5f6e56	d5f6e56610	https://github.com/php/php-src/commit/d5f6e56610	0.67768	0.67999	0.00052	0.07641	0.67842	0.00	0.67820	0.00	1.124	0.000	1.000	26.85
+Symfony 2.8.0 demo app	50	50	100	PHP - previous master	19f94430d5	https://github.com/php/php-src/commit/19f94430d5	0.67413	0.67685	0.00063	0.09339	0.67493	-0.51	0.67479	-0.50	1.285	8.614	0.000	26.16
+Symfony 2.8.0 demo app	50	50	100	PHP - master	dcfa40cccf	https://github.com/php/php-src/commit/dcfa40cccf	0.67390	0.67670	0.00065	0.09693	0.67468	-0.55	0.67451	-0.54	1.363	8.614	0.000	26.14
+Symfony 2.8.0 demo app	50	50	100	PHP - master (JIT)	dcfa40cccf	https://github.com/php/php-src/commit/dcfa40cccf	0.64221	0.64525	0.00050	0.07759	0.64291	-5.23	0.64282	-5.22	2.167	8.614	0.000	26.21
+Wordpress 6.9 main page	20	50	20	PHP - baseline@d5f6e56	d5f6e56610	https://github.com/php/php-src/commit/d5f6e56610	0.59194	0.59665	0.00086	0.14497	0.59360	0.00	0.59359	0.00	0.936	0.000	1.000	26.67
+Wordpress 6.9 main page	20	50	20	PHP - previous master	19f94430d5	https://github.com/php/php-src/commit/19f94430d5	0.58945	0.59231	0.00059	0.10049	0.59024	-0.57	0.59016	-0.58	1.647	8.579	0.000	26.20
+Wordpress 6.9 main page	20	50	20	PHP - master	dcfa40cccf	https://github.com/php/php-src/commit/dcfa40cccf	0.58947	0.59227	0.00042	0.07131	0.59010	-0.59	0.59007	-0.59	2.865	8.600	0.000	26.18
+Wordpress 6.9 main page	20	50	20	PHP - master (JIT)	dcfa40cccf	https://github.com/php/php-src/commit/dcfa40cccf	0.52089	0.52473	0.00071	0.13614	0.52158	-12.13	0.52141	-12.16	3.540	8.614	0.000	26.24
+bench.php	20	50	2	PHP - baseline@d5f6e56	d5f6e56610	https://github.com/php/php-src/commit/d5f6e56610	0.44322	0.44788	0.00086	0.19283	0.44468	0.00	0.44459	0.00	1.795	0.000	1.000	26.67
+bench.php	20	50	2	PHP - previous master	19f94430d5	https://github.com/php/php-src/commit/19f94430d5	0.44947	0.45201	0.00061	0.13436	0.45071	1.36	0.45072	1.38	0.087	-8.614	0.000	26.20
+bench.php	20	50	2	PHP - master	dcfa40cccf	https://github.com/php/php-src/commit/dcfa40cccf	0.45004	0.45331	0.00056	0.12502	0.45101	1.42	0.45091	1.42	1.401	-8.614	0.000	26.18
+bench.php	20	50	2	PHP - master (JIT)	dcfa40cccf	https://github.com/php/php-src/commit/dcfa40cccf	0.14401	0.14502	0.00020	0.14168	0.14451	-67.50	0.14451	-67.50	-0.189	8.614	0.000	26.24
+
