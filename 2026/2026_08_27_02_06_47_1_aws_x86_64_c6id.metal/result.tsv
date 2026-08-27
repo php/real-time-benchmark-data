@@ -1,0 +1,13 @@
+Test name	Test warmup	Test iterations	Test requests	PHP	PHP Commit hash	PHP Commit URL	Min	Max	Std dev	Rel std dev %	Mean	Mean diff %	Median	Median diff %	Skewness	Z-stat	P-value	Memory usage
+Laravel 12.11.0 demo app	50	50	100	PHP - baseline@d5f6e56	d5f6e56610	https://github.com/php/php-src/commit/d5f6e56610	0.39916	0.40091	0.00028	0.07003	0.39954	0.00	0.39952	0.00	2.590	0.000	1.000	26.70
+Laravel 12.11.0 demo app	50	50	100	PHP - previous master	846773a4e9	https://github.com/php/php-src/commit/846773a4e9	0.37225	0.37404	0.00031	0.08351	0.37273	-6.71	0.37269	-6.72	1.795	8.614	0.000	25.86
+Laravel 12.11.0 demo app	50	50	100	PHP - master	53c3116c38	https://github.com/php/php-src/commit/53c3116c38	0.37289	0.37477	0.00041	0.10876	0.37346	-6.53	0.37338	-6.54	1.728	8.614	0.000	25.87
+Symfony 2.8.0 demo app	50	50	100	PHP - baseline@d5f6e56	d5f6e56610	https://github.com/php/php-src/commit/d5f6e56610	0.68055	0.68437	0.00083	0.12143	0.68187	0.00	0.68181	0.00	0.902	0.000	1.000	26.84
+Symfony 2.8.0 demo app	50	50	100	PHP - previous master	846773a4e9	https://github.com/php/php-src/commit/846773a4e9	0.66996	0.67252	0.00055	0.08244	0.67091	-1.61	0.67082	-1.61	0.839	8.614	0.000	25.90
+Symfony 2.8.0 demo app	50	50	100	PHP - master	53c3116c38	https://github.com/php/php-src/commit/53c3116c38	0.67054	0.67204	0.00032	0.04705	0.67107	-1.58	0.67103	-1.58	1.113	8.614	0.000	25.89
+Wordpress 6.9 main page	20	50	20	PHP - baseline@d5f6e56	d5f6e56610	https://github.com/php/php-src/commit/d5f6e56610	0.59084	0.59403	0.00085	0.14347	0.59241	0.00	0.59232	0.00	0.055	0.000	1.000	26.65
+Wordpress 6.9 main page	20	50	20	PHP - previous master	846773a4e9	https://github.com/php/php-src/commit/846773a4e9	0.58861	0.59420	0.00096	0.16270	0.58997	-0.41	0.58979	-0.43	2.236	7.938	0.000	26.26
+Wordpress 6.9 main page	20	50	20	PHP - master	53c3116c38	https://github.com/php/php-src/commit/53c3116c38	0.58913	0.59176	0.00049	0.08278	0.59012	-0.39	0.59006	-0.38	0.778	8.490	0.000	26.25
+bench.php	20	50	2	PHP - baseline@d5f6e56	d5f6e56610	https://github.com/php/php-src/commit/d5f6e56610	0.44366	0.44854	0.00079	0.17808	0.44479	0.00	0.44467	0.00	2.766	0.000	1.000	26.65
+bench.php	20	50	2	PHP - previous master	846773a4e9	https://github.com/php/php-src/commit/846773a4e9	0.45005	0.45273	0.00053	0.11814	0.45110	1.42	0.45106	1.44	0.493	-8.614	0.000	26.26
+bench.php	20	50	2	PHP - master	53c3116c38	https://github.com/php/php-src/commit/53c3116c38	0.45056	0.45661	0.00095	0.21099	0.45202	1.63	0.45198	1.64	2.615	-8.614	0.000	26.25
