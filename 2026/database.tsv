@@ -4558,3 +4558,23 @@ bench.php	20	50	2	PHP - previous master	f5d89c8394	https://github.com/php/php-sr
 bench.php	20	50	2	PHP - master	810ac6dc4d	https://github.com/php/php-src/commit/810ac6dc4d	0.45166	0.45493	0.00081	0.17823	0.45324	1.90	0.45315	1.92	0.156	-8.607	0.000	26.28
 bench.php	20	50	2	PHP - master (JIT)	810ac6dc4d	https://github.com/php/php-src/commit/810ac6dc4d	0.14373	0.14491	0.00025	0.17065	0.14433	-67.55	0.14429	-67.55	0.189	8.614	0.000	26.18
 
+URI	ID	Name	Environment	Runner	Binary layout strategy	Instance type	Architecture	CPU	CPU cores	CPU frequency	RAM	Kernel	OS	GCC	Dedicated instance	Deeper C-states	Turbo boost	Hyper-threading	Time
+2026/2026_09_30_01_16_10_1_aws_x86_64_c6id.metal	aws_x86_64_c6id.metal	AWS x86_64 (c6id.metal)	aws	host		c6id.metal	x86_64	Intel(R) Xeon(R) Platinum 8375C CPU @ 2.90GHz	64	2900	251	6.18.38-76.139.amzn2023.x86_64	Amazon Linux 2023.12.20260727	14.2.1	0	0	0	0	2026-09-30 01:16:10
+Test name	Test warmup	Test iterations	Test requests	PHP	PHP Commit hash	PHP Commit URL	Min	Max	Std dev	Rel std dev %	Mean	Mean diff %	Median	Median diff %	Skewness	Z-stat	P-value	Memory usage
+Laravel 12.11.0 demo app	50	50	100	PHP - baseline@d5f6e56	d5f6e56610	https://github.com/php/php-src/commit/d5f6e56610	0.39518	0.39634	0.00022	0.05511	0.39560	0.00	0.39556	0.00	1.085	0.000	1.000	26.70
+Laravel 12.11.0 demo app	50	50	100	PHP - previous master	810ac6dc4d	https://github.com/php/php-src/commit/810ac6dc4d	0.37332	0.37457	0.00026	0.07007	0.37368	-5.54	0.37362	-5.55	1.532	8.614	0.000	26.16
+Laravel 12.11.0 demo app	50	50	100	PHP - master	c04004b18f	https://github.com/php/php-src/commit/c04004b18f	0.37533	0.37729	0.00052	0.13847	0.37589	-4.98	0.37570	-5.02	1.502	8.614	0.000	26.19
+Laravel 12.11.0 demo app	50	50	100	PHP - master (JIT)	c04004b18f	https://github.com/php/php-src/commit/c04004b18f	0.35119	0.35291	0.00032	0.08966	0.35162	-11.12	0.35155	-11.13	1.920	8.614	0.000	26.28
+Symfony 2.8.0 demo app	50	50	100	PHP - baseline@d5f6e56	d5f6e56610	https://github.com/php/php-src/commit/d5f6e56610	0.67498	0.68441	0.00143	0.21076	0.67645	0.00	0.67607	0.00	3.766	0.000	1.000	26.84
+Symfony 2.8.0 demo app	50	50	100	PHP - previous master	810ac6dc4d	https://github.com/php/php-src/commit/810ac6dc4d	0.66562	0.67021	0.00076	0.11402	0.66628	-1.50	0.66611	-1.47	3.462	8.614	0.000	26.29
+Symfony 2.8.0 demo app	50	50	100	PHP - master	c04004b18f	https://github.com/php/php-src/commit/c04004b18f	0.66575	0.66871	0.00045	0.06707	0.66621	-1.51	0.66610	-1.48	3.766	8.614	0.000	26.18
+Symfony 2.8.0 demo app	50	50	100	PHP - master (JIT)	c04004b18f	https://github.com/php/php-src/commit/c04004b18f	0.63390	0.64955	0.00218	0.34370	0.63509	-6.11	0.63466	-6.13	6.238	8.614	0.000	26.21
+Wordpress 6.9 main page	20	50	20	PHP - baseline@d5f6e56	d5f6e56610	https://github.com/php/php-src/commit/d5f6e56610	0.58689	0.59026	0.00075	0.12676	0.58844	0.00	0.58838	0.00	0.201	0.000	1.000	26.65
+Wordpress 6.9 main page	20	50	20	PHP - previous master	810ac6dc4d	https://github.com/php/php-src/commit/810ac6dc4d	0.58891	0.59266	0.00071	0.12120	0.58985	0.24	0.58968	0.22	2.072	-7.531	0.000	26.28
+Wordpress 6.9 main page	20	50	20	PHP - master	c04004b18f	https://github.com/php/php-src/commit/c04004b18f	0.58894	0.59175	0.00058	0.09821	0.58964	0.21	0.58952	0.19	2.010	-7.021	0.000	26.22
+Wordpress 6.9 main page	20	50	20	PHP - master (JIT)	c04004b18f	https://github.com/php/php-src/commit/c04004b18f	0.51595	0.51956	0.00066	0.12729	0.51673	-12.19	0.51657	-12.20	2.776	8.614	0.000	26.19
+bench.php	20	50	2	PHP - baseline@d5f6e56	d5f6e56610	https://github.com/php/php-src/commit/d5f6e56610	0.44353	0.44570	0.00054	0.12077	0.44461	0.00	0.44461	0.00	-0.263	0.000	1.000	26.65
+bench.php	20	50	2	PHP - previous master	810ac6dc4d	https://github.com/php/php-src/commit/810ac6dc4d	0.45132	0.45526	0.00082	0.18027	0.45308	1.91	0.45298	1.88	0.509	-8.614	0.000	26.28
+bench.php	20	50	2	PHP - master	c04004b18f	https://github.com/php/php-src/commit/c04004b18f	0.45096	0.45380	0.00066	0.14626	0.45250	1.77	0.45244	1.76	-0.003	-8.614	0.000	26.22
+bench.php	20	50	2	PHP - master (JIT)	c04004b18f	https://github.com/php/php-src/commit/c04004b18f	0.14340	0.14802	0.00061	0.42280	0.14415	-67.58	0.14407	-67.60	5.382	8.614	0.000	26.19
+
